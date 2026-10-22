@@ -1,46 +1,52 @@
+/* Feuille de style – application de location de voitures */
 body {
+    background-color: aqua;
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 20px;
 }
-
+ 
 h1 {
-    color: #2c3e50;
+    color: red;
 }
-
-.boutons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 30px;
+ 
+form {
+    background-color: blanchedalmond;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
-
-button {
-    background-color: #3498db;
-    color: white;
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+ 
+input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #ccc;
+    border-radius: 30px;
+}
+ 
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
     border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
     cursor: pointer;
 }
-
-button:hover {
-    background-color: #2980b9;
+ 
+input[type="submit"]:hover {
+    background-color: green;
 }
-
-button:active {
-    transform: translateY(2px);
+selecteur {
+    propriété: valeur;
+    propriété: valeur;
 }
-
-#affichage {
-    background-color: white;
-    max-width: 500px;
-    min-height: 80px;
-    margin: 0 auto;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 20px;

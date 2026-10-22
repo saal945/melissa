@@ -40,6 +40,7 @@ function nombreAleatoire() {
 }
 
 function effacer() {
+
     document.getElementById("message").textContent = "";
 }
 
@@ -55,3 +56,21 @@ function verif_age() {
         document.body.style.backgroundColor = "green"
     }
 }
+
+function calculerNotes() {
+    let n1=(prompt("Note 1:"));
+
+     let n2=(prompt("Note 2:"));
+
+      let n3=(prompt("Note 3:"));
+
+      let Somme = Number(n1) + Number(n2) + Number(n3);
+
+      let moyenne=Somme /3;
+
+      document.getElementById("message").textContent="Somme;"+ Somme + "-Moyenne;"+ moyenne;
+            }
+
+
+
+
