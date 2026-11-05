@@ -1,22 +1,44 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-	<title>Document</title>
+    <title>Calculatrice</title>
 
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-	<script src="script.js"></script>
-
-
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-	<label>Nombre 1:</label>
-	<input type="text" name="t1" id="t1" placeholder="Saisir un nombre">
-	<label>Nombre 2:</label>
-	<input type="text"name="t2" id="t2" placeholder="Saisir un nombre">
 
-	<button onclick="somme()">Somme</button>
+    <h1>Calculatrice</h1>
 
-	<input type="text" name="resultat" id="resultat">
+    <label>Nombre 1 :</label>
+    <input type="text" name="t1" id="t1" placeholder="Saisir un nombre">
 
+    <br><br>
 
-	<body></html>
+    <label>Nombre 2 :</label>
+    <input type="text" name="t2" id="t2" placeholder="Saisir un nombre">
+
+    <br><br>
+
+    <button onclick="somme()">Somme</button>
+    <button onclick="soustraction()">Soustraction</button>
+    <button onclick="produit()">Produit</button>
+    <button onclick="division()">Division</button>
+
+    <br><br>
+
+    <button onclick="permutation()">Permutation</button>
+    <button onclick="parite()">Parité</button>
+    <button onclick="effacer()">Effacer</button>
+
+    <br><br>
+
+    <label>Résultat :</label>
+    <input type="text" name="resultat" id="resultat" readonly>
+
+</body>
+
+</html>
