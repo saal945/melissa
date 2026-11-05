@@ -1,0 +1,74 @@
+
+/* Nom : à compléter - Exercice 3 */
+
+/* Couleurs de la page */
+:root {
+    --fond: #370031;
+    --bordeaux: #832232;
+    --violet: #4c0043;
+    --blanc: white;
+}
+
+/* Mise en forme générale */
+body {
+    background-color: var(--fond);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: var(--blanc);
+}
+
+/* En-tête */
+header {
+    background-color: var(--bordeaux);
+    text-align: center;
+    padding: 30px;
+}
+
+/* Les trois cartes */
+.cartes {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Chaque carte */
+.carte {
+    background-color: var(--bordeaux);
+    border: 5px solid var(--violet);
+    color: var(--blanc);
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Titres des cartes */
+.carte h2 {
+    color: var(--blanc);
+}
+
+/* Image de Simone Biles */
+.carte img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--bordeaux);
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adaptation aux petits écrans */
+@media screen and (max-width: 800px) {
+    .cartes {
+        flex-direction: column;
+    }
+}
