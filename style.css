@@ -1,52 +1,59 @@
-/* Feuille de style – application de location de voitures */
+/* Mise en forme générale */
 body {
-    background-color: aqua;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    background-color: #f2f4f8;
+    padding: 40px;
 }
  
-h1 {
-    color: red;
-}
- 
-form {
-    background-color: blanchedalmond;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
-}
- 
+/* Libellés */
 label {
     display: block;
+    margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #333;
 }
  
-input[type="text"], input[type="email"], textarea {
-    width: 90%;
+/* Zones de texte */
+input[type="text"] {
+    width: 220px;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 5px solid #ccc;
-    border-radius: 30px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
 }
  
-input[type="submit"] {
-    background-color: blue;
-    color: #fff;
+/* Effet au clic dans une zone */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff55;
+}
+ 
+/* Bouton Somme */
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 5px;
+    font-size: 15px;
     cursor: pointer;
 }
  
-input[type="submit"]:hover {
-    background-color: green;
+/* Effet au survol */
+button:hover {
+    background-color: #0056b3;
 }
-selecteur {
-    propriété: valeur;
-    propriété: valeur;
+ 
+/* Zone résultat */
+#resultat {
+    margin-top: 20px;
+    background-color: #e8f0fe;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    color: #0056b3;
 }

@@ -1,76 +1,125 @@
-function direBonjour() {
-    document.getElementById("message").textContent =
-        "Bonjour ! Bienvenue sur ma page.";
-}
+// Fonction somme
+function somme() {
 
-function afficherDate() {
-    var maintenant = new Date();
+    var a = document.getElementById("t1").value;
+    var b = document.getElementById("t2").value;
 
-    var texte = "Nous sommes le " +
-        maintenant.toLocaleDateString("fr-FR") +
-        " et il est " +
-        maintenant.toLocaleTimeString("fr-FR") + ".";
+    a = parseFloat(a);
+    b = parseFloat(b);
 
-    document.getElementById("message").textContent = texte;
-}
-
-function changerCouleur() {
-    var couleurs = [
-        "#ffeaa7",
-        "#fab1a0",
-        "#81ecec",
-        "#a29bfe",
-        "#b2f2bb"
-    ];
-
-    var indice = Math.floor(Math.random() * couleurs.length);
-    var couleurChoisie = couleurs[indice];
-
-    document.body.style.backgroundColor = couleurChoisie;
-
-    document.getElementById("message").textContent =
-        "Nouvelle couleur de fond : " + couleurChoisie;
-}
-
-function nombreAleatoire() {
-    var nombre = Math.floor(Math.random() * 100) + 1;
-
-    document.getElementById("message").textContent =
-        "Votre nombre aléatoire est : " + nombre;
-}
-
-function effacer() {
-
-    document.getElementById("message").textContent = "";
-}
-
-function verif_age() {
-    let n1 = prompt("Donnez votre âge : ")
- 
-    if (n1 < 18) {
-        document.write("Vous êtes mineur")
-  document.body.style.backgroundColor = "red"
+    if (isNaN(a) || isNaN(b)) {
+        document.getElementById("resultat").value = "Erreur";
     }
     else {
-        document.write("Vous êtes majeur")
-        document.body.style.backgroundColor = "green"
+        var c = a + b;
+        document.getElementById("resultat").value = c;
     }
 }
 
-function calculerNotes() {
-    let n1=(prompt("Note 1:"));
 
-     let n2=(prompt("Note 2:"));
+// Fonction soustraction
+function soustraction() {
 
-      let n3=(prompt("Note 3:"));
+    var a = document.getElementById("t1").value;
+    var b = document.getElementById("t2").value;
 
-      let Somme = Number(n1) + Number(n2) + Number(n3);
+    a = parseFloat(a);
+    b = parseFloat(b);
 
-      let moyenne=Somme /3;
+    if (isNaN(a) || isNaN(b)) {
+        document.getElementById("resultat").value = "Erreur";
+    }
+    else {
+        var c = a - b;
+        document.getElementById("resultat").value = c;
+    }
+}
 
-      document.getElementById("message").textContent="Somme;"+ Somme + "-Moyenne;"+ moyenne;
-            }
+
+// Fonction produit
+function produit() {
+
+    var a = document.getElementById("t1").value;
+    var b = document.getElementById("t2").value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    if (isNaN(a) || isNaN(b)) {
+        document.getElementById("resultat").value = "Erreur";
+    }
+    else {
+        var c = a * b;
+        document.getElementById("resultat").value = c;
+    }
+}
 
 
+// Fonction division
+function division() {
+
+    var a = document.getElementById("t1").value;
+    var b = document.getElementById("t2").value;
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    if (isNaN(a) || isNaN(b)) {
+        document.getElementById("resultat").value = "Erreur";
+    }
+    else if (b == 0) {
+        document.getElementById("resultat").value = "Division impossible";
+    }
+    else {
+        var c = a / b;
+        document.getElementById("resultat").value = c;
+    }
+}
 
 
+// Fonction permutation
+function permutation() {
+
+    var n1 = document.getElementById("t1").value;
+    var n2 = document.getElementById("t2").value;
+
+    var temp = n1;
+
+    n1 = n2;
+    n2 = temp;
+
+    document.getElementById("t1").value = n1;
+    document.getElementById("t2").value = n2;
+}
+
+
+// Fonction parité
+function parite() {
+
+    var a = document.getElementById("t1").value;
+
+    a = parseFloat(a);
+
+    if (isNaN(a)) {
+        document.getElementById("resultat").value = "Erreur";
+    }
+    else if (a % 1 != 0) {
+        document.getElementById("resultat").value = "Nombre non entier";
+    }
+    else if (a % 2 == 0) {
+        document.getElementById("resultat").value = "Pair";
+    }
+    else {
+        document.getElementById("resultat").value = "Impair";
+    }
+}
+
+
+// Fonction effacer
+function effacer() {
+
+    document.getElementById("t1").value = "";
+    document.getElementById("t2").value = "";
+    document.getElementById("resultat").value = "";
+
+}
