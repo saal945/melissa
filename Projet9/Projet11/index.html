@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 JavaScript - 5 boutons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="conteneur">
+        <h1>Ma page interactive</h1>
+        <p class="introduction">
+            Cliquez sur un bouton pour découvrir le résultat.
+        </p>
+
+        <div class="boutons">
+            <button id="btn1" onclick="direBonjour()">
+                Dire bonjour
+            </button>
+
+            <button id="btn2" onclick="afficherDate()">
+                Afficher la date
+            </button>
+
+            <button id="btn3" onclick="changerCouleur()">
+                Changer la couleur
+            </button>
+
+            <button id="btn4" onclick="nombreAleatoire()">
+                Nombre aléatoire
+            </button>
+
+            <button id="btn5" onclick="effacer()">
+                Effacer
+            </button>
+        </div>
+
+        <section id="affichage" aria-live="polite">
+            <p id="message">Cliquez sur un bouton.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

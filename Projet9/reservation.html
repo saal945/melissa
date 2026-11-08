@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation – AutoLoc Méditerranée</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <p class="logo">AutoLoc <span>Méditerranée</span></p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#offres">Nos offres</a></li>
+            <li><a href="index.html#agences">Nos agences</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Réserver votre véhicule</h1>
+
+    <section>
+
+        <h2>Formulaire de réservation</h2>
+
+        <form>
+
+            <p>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required>
+            </p>
+
+            <p>
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom" required>
+            </p>
+
+            <p>
+                <label for="email">Adresse e-mail :</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="vehicule">Véhicule :</label><br>
+                <select id="vehicule" name="vehicule">
+                    <option value="clio">Renault Clio – 39 € / jour</option>
+                    <option value="208">Peugeot 208 – 59 € / jour</option>
+                    <option value="fiat500">Fiat 500 Cabriolet – 45 € / jour</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="date-debut">Date de début :</label><br>
+                <input type="date" id="date-debut" name="date-debut" required>
+            </p>
+
+            <p>
+                <label for="date-fin">Date de fin :</label><br>
+                <input type="date" id="date-fin" name="date-fin" required>
+            </p>
+
+            <p>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </p>
+
+            <button type="submit" class="bouton">
+                Confirmer la réservation
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer id="contact">
+
+    <address>
+        AutoLoc Méditerranée – 12 quai du Port, 13002 Marseille<br>
+        Tél. : 04 91 00 00 00 – contact@autoloc-med.fr
+    </address>
+
+    <p>
+        &copy; 2026 AutoLoc Méditerranée – Tous droits réservés
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
