@@ -1,0 +1,49 @@
+
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Bloc 1 : titre */
+.bloc-titre {
+    background-color: red;
+    color: yellow;
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+.bloc-titre h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Bloc 2 : paragraphe */
+.bloc-texte {
+    background-color: red;
+    color: yellow;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-left: calc(100% - 800px);
+}
+
+.bloc-texte p {
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Bloc 3 : image */
+.bloc-image {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    clear: both;
+    margin-top: 20px;
+}
+
+.bloc-image img {
+    width: 380px;
+}

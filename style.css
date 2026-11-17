@@ -1,52 +1,94 @@
-/* Feuille de style – application de location de voitures */
-body {
-    background-color: aqua;
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f2fa;
+    color: #242039;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 800;
     text-align: center;
 }
- 
-h1 {
-    color: red;
+
+h1 span {
+    color: #8056d9;
 }
- 
-form {
-    background-color: blanchedalmond;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+
+.subtitle {
+    text-align: center;
+    color: #89839c;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    letter-spacing: 4px;
+    font-size: 12px;
 }
- 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+
+.projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
 }
- 
-input[type="text"], input[type="email"], textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 5px solid #ccc;
-    border-radius: 30px;
+
+.projets a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e9e4f2;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #29243e;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
 }
- 
-input[type="submit"] {
-    background-color: blue;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
+
+.projets a span {
+    color: #8056d9;
+    font-size: 20px;
 }
- 
-input[type="submit"]:hover {
-    background-color: green;
+
+.projets a:hover {
+    background: #8056d9;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(128, 86, 217, 0.2);
 }
-selecteur {
-    propriété: valeur;
-    propriété: valeur;
+
+.projets a:hover span {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .projets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .projets {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
 }
